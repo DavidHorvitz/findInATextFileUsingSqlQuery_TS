@@ -1,0 +1,24 @@
+{
+  "name": "findinatextfileusingsqlquery_ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node home.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidHorvitz/findInATextFileUsingSqlQuery_TS.git"
+  },
+  "author": "david horvitz",
+  "license": "ISC",
+
+  "bugs": {
+    "url": "https://github.com/DavidHorvitz/findInATextFileUsingSqlQuery_TS/issues"
+  },
+  "homepage": "https://github.com/DavidHorvitz/findInATextFileUsingSqlQuery_TS#readme",
+  "dependencies": {
+    "@types/node": "^18.11.18"
+  }
+}
