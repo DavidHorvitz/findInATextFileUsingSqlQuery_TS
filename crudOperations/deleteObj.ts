@@ -41,7 +41,7 @@
 import { map } from '../memoryIndex';
 import { writeOrRead } from '../home';
 import { promises as fs } from 'fs';
-import { validateInput } from '../userQuestions';
+import { validateInput } from '../validateInput';
 
 // export const removeObjectFromTextFile = async (position: number) => {
 //     let findIndex = await validateInput("Enter your ID (must be 36 characters)", 36, 'string');
@@ -69,7 +69,7 @@ import { validateInput } from '../userQuestions';
 
 //     }
 // }
-export async function getInput() {
+export async function deleteObject() {
     let findIndex = await validateInput("Enter your ID (must be 36 characters)", 36, 'string');
     await getFindIndex(findIndex);
 }

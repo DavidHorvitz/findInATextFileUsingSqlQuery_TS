@@ -2,7 +2,7 @@ import { promises as fs } from 'fs';
 import { FileHandle } from 'fs/promises';
 import { writeOrRead } from '../home';
 import { findTheCorrectIndex } from '../memoryIndex';
-import { validateInput } from '../userQuestions';
+import { validateInput } from '../validateInput';
 
 export let objectSearchByIndex = async () => {
     const findIndex: string = await validateInput("Enter your ID (must be 36 characters)", 36, 'string');

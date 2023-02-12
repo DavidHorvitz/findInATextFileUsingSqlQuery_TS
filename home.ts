@@ -1,9 +1,9 @@
 import { exit } from 'process';
 import { getDateFromTheUser } from './crudOperations/createObj';
-import { getInput } from './crudOperations/deleteObj';
+import { deleteObject } from './crudOperations/deleteObj';
 import { objectSearchByIndex } from './crudOperations/readObj';
 import { loadAnIndexIntoMemory } from './memoryIndex';
-import { validateInput } from './userQuestions';
+import { validateInput } from './validateInput';
 
 
 
@@ -11,7 +11,7 @@ export async function writeOrRead(): Promise<void> {
     const question: string = await validateInput(`Do you want to enter information or read or or delate or exit  w | r | d | e  ?`, 1, 'string');
     switch (question) {
         case 'd':
-            return await getInput();
+            return await deleteObject();
         case 'w':
             return await getDateFromTheUser();
         case 'r':

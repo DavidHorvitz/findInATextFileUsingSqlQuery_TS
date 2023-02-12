@@ -3,7 +3,7 @@ import { promises as fs } from 'fs';
 // import * as fs from 'fs';
 import { writeOrRead } from '../home';
 import { map } from '../memoryIndex';
-import { validateInput } from '../userQuestions';
+import { validateInput } from '../validateInput';
 const FILL_CHAR = `|`;
 
 export const getDateFromTheUser = async function (): Promise<void> {
